@@ -1,6 +1,5 @@
 ![pipeline](https://github.com/TheRealPad/creditCardValidator/actions/workflows/pipeline.yml/badge.svg)
 
-![text](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![text](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
 
 # CreditCardValidator
