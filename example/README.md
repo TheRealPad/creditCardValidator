@@ -4,7 +4,7 @@ This project is a simple main function to test the CreditCardValidator lib.
 
 ## How to use
 
-1. You need to [download](../README) the lib on your machine
+1. You need to [download](../README.md#how-to-use) the lib on your machine
 
 2. In your [CMakeLists.txt](CMakeLists.txt) you must add 3 lines:
     - SET(LIB_PATH "path/to/the/lib") -> path to the directory where the lib is
