@@ -19,12 +19,17 @@ mkdir build
  cd build/ && cmake ..
 ```
 
-3. Build the shared library
+3. Build the shared library (in build/)
 ```bash
 make # the binary will be libcreditCardValidator.1.0.0.dylib
 ```
 
-4. (Optionnal) run the unit test
+4. Download the lib on your machine (in build/)
+```bash
+cmake -P cmake_install.cmake
+```
+
+5. (Optionnal) run the unit test
 ```bash
 ./test_creditCardValidator
 ```

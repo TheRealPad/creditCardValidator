@@ -5,6 +5,7 @@ project(creditCardValidator VERSION 1.0.0 DESCRIPTION "mylib description")
 include(GNUInstallDirs)
 
 SET(NAME "creditCardValidator")
+SET(TEST_NAME "test_creditCardValidator")
 set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install)
 
 SET(SRC
@@ -36,9 +37,9 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(test_creditCardValidator tests/CreditCardValidatorTest.cpp)
-target_link_libraries(test_creditCardValidator PRIVATE gtest_main ${NAME})
+add_executable(${TEST_NAME} tests/CreditCardValidatorTest.cpp)
+target_link_libraries(${TEST_NAME} PUBLIC gtest_main ${NAME})
     
 include(CTest)
 include(GoogleTest)
-gtest_discover_tests(test_creditCardValidator)
+gtest_discover_tests(${TEST_NAME})
