@@ -11,7 +11,8 @@ namespace CreditCardValidator {
             void doubleSecondDigits(std::vector<unsigned int> &numbers);
             unsigned int addAllSecondDigits(std::vector<unsigned int> &numbers);
             unsigned int addAllOddDigits(std::vector<unsigned int> &numbers);
-            bool isDivisibleByTen(const unsigned int val);
+            bool isDivisibleByTen(unsigned int val);
+            unsigned int bitwiseAdd(unsigned int a, unsigned int b);
 
         private:
             std::vector<unsigned int> stringToVector(std::string const &str);
